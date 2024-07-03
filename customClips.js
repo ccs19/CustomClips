@@ -1,4 +1,4 @@
-
+(function() {
 
 var cssLocation = "customClips.css";
 var bottomNav = "<button class='bottomNav-btn bottomNav-active' id='bottomNav-leftColumn'>Clips</button><button class='bottomNav-btn bottomNav-btn-invisible' id='bottomNav-middleColumn'>Computation</button><button class='bottomNav-btn bottomNav-btn-invisible' id='bottomNav-rightColumn'>Right</button>";
@@ -249,7 +249,11 @@ var initCustomClips = function() {
     setTimeout(determineInitialVisiblity, 50);
 };
 
-export {initCustomClips};
+initCustomClips();
+
+})();
+
+
 
 
 // Scriptlet to insert:
@@ -263,9 +267,6 @@ javascript:(function() {
     script.type = 'text/javascript';
     script.src = 'https://raw.githubusercontent.com/ccs19/CustomClips/main/customClips.js';
     head.appendChild(script);
-    script.onload = function() {
-        initCustomClips();
-    };
 })();
 
 */

@@ -238,12 +238,34 @@ function addOptions() {
     
 }
 
-insertBottomNav();
-insertCss();
-modifyColumns();
-cleanButtons();
-listenVisibility();
-//addOptions();
 
-// wait for 1 second before determining initial visiblity
-setTimeout(determineInitialVisiblity, 50);
+var initCustomClips = function() {
+    insertBottomNav();
+    insertCss();
+    modifyColumns();
+    cleanButtons();
+    listenVisibility();
+    //addOptions();
+    setTimeout(determineInitialVisiblity, 50);
+};
+
+export {initCustomClips};
+
+
+// Scriptlet to insert:
+
+// append javascript to head from URL https://raw.githubusercontent.com/ccs19/CustomClips/main/customClips.js
+
+/*
+javascript:(function() {
+    var head = document.getElementsByTagName('head')[0];
+    var script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.src = 'https://raw.githubusercontent.com/ccs19/CustomClips/main/customClips.js';
+    head.appendChild(script);
+    script.onload = function() {
+        initCustomClips();
+    };
+})();
+
+*/

@@ -1,0 +1,114 @@
+
+
+#mobile {
+    display: none !important;
+}
+
+#page {
+    display: block !important;
+    padding: 16px;
+}
+
+html {
+    background-color: black;
+    color: white;
+    touch-action: manipulation;
+}
+
+#consoleDiv {
+    background-color: gray;
+    /*position: fixed;
+    top:0;
+    padding: 10px 16px;*/
+}
+
+#readout1 {
+    color: yellow;
+}
+
+.console > span {
+    color: yellow;
+}
+
+#cursor {
+    color: yellow;
+}
+
+
+button {
+    user-select: none !important;
+    border-bottom-left-radius: 3px !important;
+    border-bottom-right-radius: 3px !important;
+    border-top-left-radius: 3px !important;
+    border-top-right-radius: 3px !important;
+    line-height: 10px !important;
+    padding-block-end: 6px !important;
+    padding-block-start: 6px !important;
+    padding-bottom: 6px !important;
+    padding-inline-end: 12px !important;
+    padding-inline-start :12px !important;
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+}
+
+#giftShopDiv {
+    display: none;
+}
+
+.bottomNav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 105%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #222;
+    height: 32px;
+}
+
+.bottomNav-btn {
+    background-color: #222;
+    color: white;
+
+}
+
+table {
+    color: green;
+}
+
+.bottomNav-active {
+    background-color: #333;
+}
+
+.bottomNav-btn-invisible {
+    display: none !important;
+}
+
+.customClips-column {
+    padding-top: 16px !important;
+    padding-bottom: 32px !important;
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+    display: block;
+}
+
+.customClips-column-hide {
+    display: none !important;
+}
+
+#investmentDiv1 {
+    line-height: 90% !important;
+}
+
+#memoryDisplay {
+    height: 32px;
+}
+
+#middleColumn, #rightColumn, #leftColumn {
+    width: 100%;
+    padding-left:8px !important;
+    padding-right:8px !important;
+    overflow-x: hidden;
+    margin-left: 0 !important;
+}
